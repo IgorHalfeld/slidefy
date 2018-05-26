@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/slidefy/handlers"
-	"github.com/slidefy/helpers"
+	"github.com/halfeld/slidefy/handlers"
+	"github.com/halfeld/slidefy/helpers"
 	"github.com/spf13/cobra"
 )
 

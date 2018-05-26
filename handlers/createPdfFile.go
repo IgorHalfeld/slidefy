@@ -3,8 +3,8 @@ package handlers
 import (
 	"fmt"
 
+	"github.com/halfeld/slidefy/helpers"
 	"github.com/jung-kurt/gofpdf"
-	"github.com/slidefy/helpers"
 )
 
 var pageSize gofpdf.InitType

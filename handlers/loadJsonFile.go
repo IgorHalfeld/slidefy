@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/slidefy/helpers"
-	"github.com/slidefy/models"
+	"github.com/halfeld/slidefy/helpers"
+	"github.com/halfeld/slidefy/models"
 )
 
 // LoadJSONFile load presention readmap

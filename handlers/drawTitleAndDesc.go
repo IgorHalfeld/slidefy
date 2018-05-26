@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"github.com/fogleman/gg"
-	"github.com/slidefy/helpers"
+	"github.com/halfeld/slidefy/helpers"
 )
 
 // DrawTitleAndDesc load title and description
