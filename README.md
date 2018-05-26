@@ -4,8 +4,17 @@
 
 ### Installation
 
+_Using go get_
 ```sh
 go get -u github.com/Halfeld/slidefy
+```
+
+_or by the binary file_
+
+```sh
+git clone https://github.com/Halfeld/slidefy.git
+cd slidefy
+./slidefy [flags]
 ```
 
 ### Why?
