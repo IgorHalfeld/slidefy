@@ -47,5 +47,5 @@ _Final pdf generated..._
 - [ ] Support to user give a background path, like png images or gifs!
 - [ ] Support to another font colors.
 - [ ] Support to markers.
-- [ ] Support to give images as well.
+- [x] Support to give images as well.
 - [ ] Support to add images on slide.
