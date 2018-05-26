@@ -24,7 +24,7 @@ func CreatePdfFile(jsonfile string, pdfFile string) {
 	helpers.ErrorHandler(err, "Something happed on create json map")
 
 	for _, obj := range p {
-		output := "./tmp/slide" + string(obj.Title) + ".png"
+		output := "./slide" + string(obj.Title) + ".png"
 		fmt.Println("Generating:", obj.Title)
 		DrawTitleAndDesc(
 			"../assets/images/bg.png",
