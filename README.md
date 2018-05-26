@@ -60,8 +60,9 @@ _Final pdf generated..._
 
 ### TO-DO
 
-- [ ] Support to user give a background path, like png images or gifs!
+- [x] Support to user give a background path, like png images!
 - [ ] Support to another font colors.
 - [ ] Support to markers.
+- [ ] Support to texts.
 - [x] Support to give images as well.
 - [ ] Support to add images on slide.
