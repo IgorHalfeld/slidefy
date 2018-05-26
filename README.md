@@ -41,3 +41,11 @@ slidefy --json path/to/json.json --pdfoutput path/to/file.pdf
 _Final pdf generated..._
 
 ![Pdf Example](./screenshots/pdf-example.png)
+
+### TO-DO
+
+- [ ] Support to user give a background path, like png images or gifs!
+- [ ] Support to another font colors.
+- [ ] Support to markers.
+- [ ] Support to give images as well.
+- [ ] Support to add images on slide.
