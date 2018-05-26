@@ -66,3 +66,4 @@ _Final pdf generated..._
 - [ ] Support to texts.
 - [x] Support to give images as well.
 - [ ] Support to add images on slide.
+- [ ] Support to add a config file on home called `~/.slidefy.json`, where will existir some flags.
