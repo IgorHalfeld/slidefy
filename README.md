@@ -40,4 +40,4 @@ slidefy --json path/to/json.json
 
 _Final pdf generated..._
 
-![Pdf Example]('./screenshots/pdf-example.png')
+![Pdf Example](./screenshots/pdf-example.png)
