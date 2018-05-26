@@ -10,7 +10,7 @@ import (
 var pageSize gofpdf.InitType
 
 // CreatePdfFile with images
-func CreatePdfFile(jsonfile string, pdfFile string) {
+func CreatePdfFile(JSONFile string, pdfFile string, bgFile string) {
 	pageSize.OrientationStr = "Landscape"
 	pageSize.UnitStr = "cm"
 	pageSize.FontDirStr = ""
@@ -20,7 +20,7 @@ func CreatePdfFile(jsonfile string, pdfFile string) {
 	}
 
 	pdf := gofpdf.NewCustom(&pageSize)
-	p, err := LoadJSONFile(jsonfile)
+	p, err := LoadJSONFile(JSONFile)
 	helpers.ErrorHandler(err, "Something happed on create json map")
 
 	for _, obj := range p {
