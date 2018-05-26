@@ -27,8 +27,8 @@ func CreatePdfFile(jsonfile string, pdfFile string) {
 		output := "./tmp/slide" + string(obj.Title) + ".png"
 		fmt.Println("Generating:", obj.Title)
 		DrawTitleAndDesc(
-			"./assets/images/bg.png",
-			"./assets/fonts/BreeSerif-Regular.ttf",
+			"../assets/images/bg.png",
+			"../assets/fonts/BreeSerif-Regular.ttf",
 			obj.Title,
 			obj.Desc,
 			output)

@@ -1,6 +1,9 @@
 package handlers
 
 import (
+	"path"
+	"runtime"
+
 	"github.com/fogleman/gg"
 	"github.com/halfeld/slidefy/helpers"
 )
@@ -16,20 +19,24 @@ func DrawTitleAndDesc(
 	const width = 1920
 	const height = 1080
 
-	image, err := gg.LoadImage(imagePath)
+	_, filename, _, _ := runtime.Caller(1)
+	imageFullPath := path.Join(path.Dir(filename), imagePath)
+	fontFullPath := path.Join(path.Dir(filename), fontPath)
+
+	image, err := gg.LoadImage(imageFullPath)
 	helpers.ErrorHandler(err, "Pass a correct path to image")
 
 	dc := gg.NewContext(width, height)
 	dc.SetRGB255(108, 92, 231)
 
-	err = dc.LoadFontFace(fontPath, 160)
+	err = dc.LoadFontFace(fontFullPath, 160)
 	helpers.ErrorHandler(err, "Fail to load font to title")
 
 	dc.DrawImage(image, 0, 0)
 
 	dc.DrawStringAnchored(title, width/2, height/2.3, 0.5, 0.5)
 
-	err = dc.LoadFontFace(fontPath, 67)
+	err = dc.LoadFontFace(fontFullPath, 67)
 	helpers.ErrorHandler(err, "Fail to load font to description")
 
 	dc.SetRGB255(99, 110, 114)
