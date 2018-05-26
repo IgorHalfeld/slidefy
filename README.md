@@ -1,8 +1,8 @@
-### Slidefy
+## Slidefy
 
 > The way to create slides when you're in a hurry, but you want them to look good.
 
-#### Installation
+### Installation
 
 ```sh
 go get -u github.com/Halfeld/slidefy
