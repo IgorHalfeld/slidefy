@@ -35,7 +35,7 @@ _My json sctruture_
 
 _Command line usage_
 ```
-slidefy --json path/to/json.json
+slidefy --json path/to/json.json --pdfoutput path/to/file.pdf
 ```
 
 _Final pdf generated..._

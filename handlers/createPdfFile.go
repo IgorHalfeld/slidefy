@@ -10,7 +10,7 @@ import (
 var pageSize gofpdf.InitType
 
 // CreatePdfFile with images
-func CreatePdfFile(jsonfile string) {
+func CreatePdfFile(jsonfile string, pdfFile string) {
 	pageSize.OrientationStr = "Landscape"
 	pageSize.UnitStr = "cm"
 	pageSize.FontDirStr = ""
@@ -36,7 +36,7 @@ func CreatePdfFile(jsonfile string) {
 		pdf.AddPage()
 		pdf.Image(output, 0, 0, 16.26, 9.14, false, "", 0, "")
 	}
-	err = pdf.OutputFileAndClose("./example/my-presentation.pdf")
+	err = pdf.OutputFileAndClose(pdfFile)
 	helpers.ErrorHandler(err, "Something happed on create pdf file")
 	fmt.Println("")
 	fmt.Println("Presentation created successfully.")

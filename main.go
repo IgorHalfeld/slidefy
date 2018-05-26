@@ -12,12 +12,14 @@ var rootCmd = &cobra.Command{
 	Long:  `The way to create slides when you're in a hurry, but you want them to look good.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		JSONFile := cmd.Flag("json").Value.String()
-		handlers.CreatePdfFile(JSONFile)
+		PDFFile := cmd.Flag("pdfoutput").Value.String()
+		handlers.CreatePdfFile(JSONFile, PDFFile)
 	},
 }
 
 func init() {
 	rootCmd.PersistentFlags().String("json", "./file.json", "Path to json presentation file")
+	rootCmd.PersistentFlags().String("pdfoutput", "./file.pdf", "Path to pdf file")
 }
 
 func main() {
