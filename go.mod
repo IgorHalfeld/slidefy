@@ -1,4 +1,4 @@
-module github.com/halfeld/slidefy
+module github.com/IgorHalfeld/slidefy
 
 go 1.13
 
